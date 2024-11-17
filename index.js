@@ -13,6 +13,12 @@ let taxRate = 5;
 let discountPercentage = 10;
 let loyaltyRate = 2;
 
+app.get("/", (req, res) => {
+  res.send("BD-1 Assignemnt")
+});
+
+
+
 // Endpoint 1: Calculate the total price of items in the cart
 app.get('/cart-total', (req, res) => {
   let cart_total = parseFloat(req.query.cartTotal);
